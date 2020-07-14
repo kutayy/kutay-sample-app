@@ -25,3 +25,11 @@ jobs:
       with:
         humanitec-token: ${{ secrets.HUMANITEC_TOKEN }}
         organization: humanitec-qa
+        
+    - name: Build and Push to Humanitec STAGING
+      uses: humanitec/build-push-to-humanitec@v1
+      with:
+        humanitec-token: ${{ secrets.HUMANITEC_TOKEN_STAGING }}
+        organization: nils-org
+        humanitec-registry: staging-registry.humanitec.io
+        humanitec-api: staging-api.humanitec.io
