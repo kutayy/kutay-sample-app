@@ -1,7 +1,8 @@
 version: 2.1
 orbs:
-  node: circleci/node@3.0.0
+  humanitec: humanitec/humanitec@volatile
 workflows:
-  node-tests:
+  build-push-and-notify-humanitec:
     jobs:
-      - node/test
+      - humanitec/build-push-and-notify-humanitec:
+          organization: nils-org2
