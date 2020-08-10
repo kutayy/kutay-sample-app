@@ -6,4 +6,4 @@ workflows:
     jobs:
       - humanitec/build-push-and-notify-humanitec:
           organization: nils-org2
-          humanitec_api: dev-api.humanitec.io
+          humanitec_api: https://dev-api.humanitec.io
