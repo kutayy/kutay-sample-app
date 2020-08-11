@@ -7,3 +7,5 @@ workflows:
       - humanitec/build-push-and-notify-humanitec:
           organization: nils-org2
           humanitec_api: https://staging-api.humanitec.io
+          module_name: my-test-module
+          
