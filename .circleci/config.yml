@@ -5,7 +5,5 @@ workflows:
   build-push-and-notify-humanitec:
     jobs:
       - humanitec/build-push-and-notify-humanitec:
-          organization: nils-org2
+          organization: robot-andrew-org
           humanitec_api: https://staging-api.humanitec.io
-          module_name: my-test-module
-          
