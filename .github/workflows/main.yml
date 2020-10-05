@@ -26,6 +26,6 @@ jobs:
         organization: nils-org
         humanitec-registry: staging-registry.humanitec.io
         humanitec-api: staging-api.humanitec.io
-        tag: my_tag
+        tag_name: true
 
 
