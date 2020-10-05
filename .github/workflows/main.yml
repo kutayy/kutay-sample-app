@@ -27,6 +27,5 @@ jobs:
         humanitec-registry: staging-registry.humanitec.io
         humanitec-api: staging-api.humanitec.io
         tag: my_tag
-    - name: Debug Action
-      uses: hmarr/debug-action@v1.0.0
+
 
