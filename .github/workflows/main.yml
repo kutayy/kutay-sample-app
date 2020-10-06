@@ -21,7 +21,22 @@ jobs:
     steps:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
-    - name: Build and Push to Humanitec STAGING
+    - name: Build and Push to Humanitec STAGING - Github SHA
+      uses: humanitec/build-push-to-humanitec@image-with-tag
+      with:
+        humanitec-token: ${{ secrets.HUMANITEC_TOKEN_STAGING }}
+        organization: nils-org
+        humanitec-registry: staging-registry.humanitec.io
+        humanitec-api: staging-api.humanitec.io
+    - name: Build and Push to Humanitec STAGING - Custom Tag
+      uses: humanitec/build-push-to-humanitec@image-with-tag
+      with:
+        humanitec-token: ${{ secrets.HUMANITEC_TOKEN_STAGING }}
+        organization: nils-org
+        humanitec-registry: staging-registry.humanitec.io
+        humanitec-api: staging-api.humanitec.io
+        tag: mytag
+    - name: Build and Push to Humanitec STAGING - Github Tag
       uses: humanitec/build-push-to-humanitec@image-with-tag
       with:
         humanitec-token: ${{ secrets.HUMANITEC_TOKEN_STAGING }}
@@ -29,5 +44,3 @@ jobs:
         humanitec-registry: staging-registry.humanitec.io
         humanitec-api: staging-api.humanitec.io
         tag_name: true
-
-
