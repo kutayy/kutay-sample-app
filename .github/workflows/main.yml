@@ -46,5 +46,5 @@ jobs:
         humanitec-api: staging-api.humanitec.io
     - name: Greeting from Kutay
       run: |
-        echo $GITHUB_SHA $GITHUB_REF $kutay1 $kutay2 $kutay3.
+        echo "$GITHUB_SHA $GITHUB_REF $kutay1 $kutay2 $kutay3."
         
