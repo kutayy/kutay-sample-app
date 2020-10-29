@@ -29,3 +29,11 @@ jobs:
         humanitec-registry: staging-registry.humanitec.io
         humanitec-api: staging-api.humanitec.io
         auto-tag: true
+    - name: Build and Push to Humanitec STAGING - Custom Tag	
+      uses: humanitec/build-push-to-humanitec@image-with-tag-debug	
+      with:	
+        humanitec-token: ${{ secrets.HUMANITEC_TOKEN_STAGING }}	
+        organization: robot-kim-org	
+        humanitec-registry: staging-registry.humanitec.io	
+        humanitec-api: staging-api.humanitec.io	
+        tag: kutay
