@@ -44,10 +44,3 @@ jobs:
         organization: robot-kim-org
         humanitec-registry: staging-registry.humanitec.io
         humanitec-api: staging-api.humanitec.io
-    - name: Greeting from Kutay
-      run: |
-        echo "$GITHUB_REF_SLUG $GITHUB_REF_NAME $GITHUB_REF_NAME_SLUG $GITHUB_SHA $GITHUB_REF $kutay1 $kutay2 $kutay3."
-    - name: Greeting from Kutay2
-      run: |
-        echo ${{ env.GITHUB_REF_SLUG }} ${{ env.GITHUB_REF_NAME }} ${{ env.GITHUB_REF_NAME_SLUG }} ${{ env.GITHUB_SHA }} ${{ env.GITHUB_SHA }} ${{ env.GITHUB_REF }} ${{ env.kutay1 }} ${{ env.kutay2 }} ${{ env.kutay2 }} 
-        
