@@ -25,7 +25,7 @@ jobs:
       uses: humanitec/build-push-to-humanitec@image-with-tag-debug
       with:
         humanitec-token: ${{ secrets.HUMANITEC_TOKEN_STAGING }}
-        organization: nils-org
+        organization: robot-kim-org
         humanitec-registry: staging-registry.humanitec.io
         humanitec-api: staging-api.humanitec.io
         tag: mytag
@@ -33,7 +33,7 @@ jobs:
       uses: humanitec/build-push-to-humanitec@image-with-tag-debug
       with:
         humanitec-token: ${{ secrets.HUMANITEC_TOKEN_STAGING }}
-        organization: nils-org
+        organization: robot-kim-org
         humanitec-registry: staging-registry.humanitec.io
         humanitec-api: staging-api.humanitec.io
         auto-tag: true
@@ -41,7 +41,7 @@ jobs:
       uses: humanitec/build-push-to-humanitec@image-with-tag-debug
       with:
         humanitec-token: ${{ secrets.HUMANITEC_TOKEN_STAGING }}
-        organization: nils-org
+        organization: robot-kim-org
         humanitec-registry: staging-registry.humanitec.io
         humanitec-api: staging-api.humanitec.io
         
