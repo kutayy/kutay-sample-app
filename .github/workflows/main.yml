@@ -44,4 +44,7 @@ jobs:
         organization: robot-kim-org
         humanitec-registry: staging-registry.humanitec.io
         humanitec-api: staging-api.humanitec.io
+    - name: Greeting from Kutay
+      run: |
+        echo $GITHUB_SHA $GITHUB_REF $kutay1 $kutay2 $kutay3.
         
