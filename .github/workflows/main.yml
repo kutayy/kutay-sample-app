@@ -20,7 +20,7 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@master
     - name: Build and Push to Humanitec STAGING - Github Tag
-      uses: humanitec/build-push-to-humanitec@v1
+      uses: humanitec/build-push-to-humanitec@master
       with:
         humanitec-token: ${{ secrets.HUMANITEC_TOKEN_STAGING }}
         organization: robot-kim-org
