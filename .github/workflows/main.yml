@@ -22,8 +22,6 @@ jobs:
     - name: Build and Push to Humanitec STAGING - Github Tag
       uses: humanitec/build-push-to-humanitec@master
       with:
-        humanitec-token: ${{ secrets.HUMANITEC_TOKEN_STAGING }}
+        humanitec-token: ${{ secrets.HUMANITEC_TOKEN_PROD }}
         organization: robot-kim-org
-        humanitec-registry: staging-registry.humanitec.io
-        humanitec-api: staging-api.humanitec.io
         auto-tag: true
