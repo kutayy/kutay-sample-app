@@ -5,5 +5,5 @@ workflows:
   build-push-and-notify-humanitec:
     jobs:
       - humanitec/build-push-and-notify-humanitec:
-          organization: robot-andrew-org
-          humanitec_api: https://staging-api.humanitec.io
+          organization: robot-kim-org
+          build_arguments: var_name=kutay
