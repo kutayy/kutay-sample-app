@@ -6,4 +6,4 @@ workflows:
     jobs:
       - humanitec/build-push-and-notify-humanitec:
           organization: robot-kim-org
-          build_arguments: var_name=kutay
+          build_arguments: --build-arg var_name=kutay
