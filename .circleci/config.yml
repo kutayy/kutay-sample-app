@@ -1,6 +1,6 @@
 version: 2.1
 orbs:
-  humanitec: humanitec/humanitec@volatile
+  humanitec: humanitec/humanitec@1.2.0
 workflows:
   build-push-and-notify-humanitec:
     jobs:
