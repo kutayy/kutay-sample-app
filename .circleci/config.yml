@@ -1,0 +1,9 @@
+version: 2.1
+orbs:
+  humanitec: humanitec/humanitec@1.2.0
+workflows:
+  build-push-and-notify-humanitec:
+    jobs:
+      - humanitec/build-push-and-notify-humanitec:
+          organization: robot-kim-org
+          build_arguments: --build-arg var_name=mocha --force-rm	
