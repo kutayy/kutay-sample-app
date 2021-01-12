@@ -6,4 +6,4 @@ workflows:
     jobs:
       - humanitec/build-push-and-notify-humanitec:
           organization: robot-kim-org
-          build_arguments: --build-arg var_name=kutay --force-rm	
+          build_arguments: --build-arg var_name=mocha --force-rm	
